@@ -13,9 +13,7 @@
     un repository github
     lier le repository avec un project scalingo
     scalingo deploie a partir des workflows
-    modifier les variables de environement chez scalingo
-        APP_ENV avec une valeur prod
-        APP_SECRET avec une valeur generé = 295cc6408ca1a76c96a12879c7b502c3
+    
 
 ## Fichier de configuration CI ...... 
     # Le nom de ton assistant
@@ -50,5 +48,8 @@ on:
 
     lier un repository github avec un project scalingo, completer lapplication
     et faire un commit puis un push, seulement si l'action du workflow est
-    reussie, scalingo lance le deploiment.
+    reussie, scalingo lance le deploiment. 
+    modifier les variables de environement chez scalingo
+        APP_ENV avec une valeur prod
+        APP_SECRET avec une valeur generé = 295cc6408ca1a76c96a12879c7b502c3
     
