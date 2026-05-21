@@ -8,12 +8,11 @@
 ## Prérequis techniques ...... 
     php 8.2
     composer instalée
-    --dev maker
-    twig
+    
     un compte scalingo
     un repository github
     lier le repository avec un project scalingo
-    dosier .github pour gerer les workflows
+    scalingo deploie a partir des workflows
     modifier les variables de environement chez scalingo
         APP_ENV avec une valeur prod
         APP_SECRET avec une valeur generé = 295cc6408ca1a76c96a12879c7b502c3
