@@ -16,33 +16,33 @@
     
 
 ## Fichier de configuration CI ...... 
-    # Le nom de ton assistant
-name: Verification du Projet Cloud, deploiment sur scalingo
+        # Le nom de ton assistant
+    name: Verification du Projet Cloud, deploiment sur scalingo
 
-# Quand doit-il travailler ?
-on:
-  - push
-# Dès que tu envoies du code sur Github
+    # Quand doit-il travailler ?
+    on:
+    - push
+    # Dès que tu envoies du code sur Github
 
-# Qu'est-ce qu'il doit faire ?
-    jobs:
-    verification-basique:
-        runs-on: ubuntu-latest  # Il utilise un ordinateur sous Linux
+    # Qu'est-ce qu'il doit faire ?
+        jobs:
+        verification-basique:
+            runs-on: ubuntu-latest  # Il utilise un ordinateur sous Linux
 
-        steps:
-        - name: Recuperer le code
-            uses: actions/checkout@v4
-            # Il fait un "copy-paste" du code
+            steps:
+            - name: Recuperer le code
+                uses: actions/checkout@v4
+                # Il fait un "copy-paste" du code
 
-        - name: Installer PHP
-            uses: shivammathur/setup-php@v2
-            with:
-            php-version: '8.2'
-            # Il installe la même version que toi
+            - name: Installer PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                php-version: '8.2'
+                # Il installe la même version que toi
 
-        - name: Verifier l'installation
-            run: composer install
-            # Il vérifie que tout fonctionne
+            - name: Verifier l'installation
+                run: composer install
+                # Il vérifie que tout fonctionne
 
 ## Procédure de déploiement pas à pas ( ⚠ Rien concernant la base de données )
 
