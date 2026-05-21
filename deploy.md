@@ -46,10 +46,10 @@
 
 ## Procédure de déploiement pas à pas ( ⚠ Rien concernant la base de données )
 
-    lier un repository github avec un project scalingo, completer lapplication
+    lier un repository github avec un project scalingo, completer l'application
     et faire un commit puis un push, seulement si l'action du workflow est
     reussie, scalingo lance le deploiment. 
     modifier les variables de environement chez scalingo
         APP_ENV avec une valeur prod
-        APP_SECRET avec une valeur generé = 295cc6408ca1a76c96a12879c7b502c3
+        APP_SECRET avec une valeur generé aletoirement = 295cc6408ca1a76c96a12879c7b502c3
     
